@@ -1,29 +1,74 @@
-# Lab 5A — Regression & Evaluation
+# Telecom Customer Churn Prediction & Model Evaluation
 
-Module 5 Week A lab for AI.SPIRE Applied AI & ML Systems.
+A machine learning project that predicts customer churn and monthly charges using the Petra Telecom dataset. The project demonstrates end-to-end model development, preprocessing, evaluation, and performance comparison using Scikit-learn.
 
-## Setup
+## Features
 
-```bash
-pip install -r requirements.txt
+- Customer churn prediction using Logistic Regression.
+- Monthly charge prediction using Ridge Regression.
+- Data preprocessing with Scikit-learn Pipelines and StandardScaler.
+- Model evaluation using classification and regression metrics.
+- Cross-validation for robust model performance assessment.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+
+## Models
+
+### Classification
+- Logistic Regression
+- Metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - Confusion Matrix
+  - Stratified Cross-Validation
+
+### Regression
+- Ridge Regression
+- Metrics:
+  - Mean Absolute Error (MAE)
+  - R² Score
+
+## Results
+
+| Model | Performance |
+|-------|-------------|
+| Logistic Regression | Accuracy: **63%** |
+| Ridge Regression | **R² = 0.71**, **MAE = 10.61** |
+
+## Project Structure
+
+```
+.
+├── data/
+│   └── telecom_churn.csv
+├── lab_regression.py
+├── requirements.txt
+└── README.md
 ```
 
-## Tasks
+## Key Learnings
 
-Complete the functions in `lab_regression.py` to build and evaluate logistic and linear regression models on the Petra Telecom churn dataset. See the lab guide for detailed instructions.
+- Built reusable machine learning pipelines using Scikit-learn.
+- Applied feature scaling with StandardScaler.
+- Evaluated both classification and regression models.
+- Compared model performance using appropriate evaluation metrics.
+- Implemented train/test splitting and cross-validation following machine learning best practices.
 
-## Submission
+## Future Improvements
 
-Your PR description must include:
-1. Classification report for logistic regression
-2. R² and MAE for Ridge regression
-3. Brief summary of findings (~3–5 sentences)
-4. Paste your PR URL into TalentLMS → Module 5 Week A → Lab 5A to submit this assignment
+- Perform feature engineering.
+- Handle class imbalance using techniques such as SMOTE or class weighting.
+- Experiment with ensemble models such as Random Forest and XGBoost.
+- Tune hyperparameters using GridSearchCV.
 
----
+## Author
 
-## License
-
-This repository is provided for educational use only. See [LICENSE](LICENSE) for terms.
-
-You may clone and modify this repository for personal learning and practice, and reference code you wrote here in your professional portfolio. Redistribution outside this course is not permitted.
+**Alaa Araydah**
+AI & Machine Learning 
